@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.25in, paperheight=7in, paperwidth=6in]{geometry}
+%\documentclass[aspectratio=169]{beamer}
+
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage[autocompile]{gregoriotex}
+
+\graphicspath{.}
+
+\title{Compline}
+\author{}
+\date{}
+
+\setlength\parindent{0pt}
+
+% Changes the size of the first letter of a score
+% \grechangestyle{initial}{\fontsize{30}{30}\selectfont}
+\grechangestyle{initial}{\usefont{U}{yinit}{m}{n}\fontsize{5}{5}\selectfont}
+
+\begin{document}
+
+\noindent
+\obeylines
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+% \greannotation{IN. V}
+
+\begin{center}
+{\Huge The Most Sacred Heart of Jesus}
+\end{center}
+\textline[t]{\textbf{Introit}}{Mode V}{Ps 32: 11.19.}
+\gabcsnippet{
+
+(c3) CO(d)gi(f)ta(hh)ti(h)ó(hi)nes(h) *() Cor(hihhg)dis(ef) e(high)jus(gf..) (;) in(d) ge(e)ne(f)ra(f)ti(f)ó(f!gwh)ne(hh) (,) et(h) ge(hf)ne(h)ra(hji)ti(h_g)ó(hji)nem :(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (:) ut(f) é(fe)ru(eh)at(h) a(h) mor(hji)te(i_[oh:h]h) (,) á(hhh)ni(e)mas(g) e(gi/jij)ó(hi_[oh:h]H'_[oh:h]GF'g)rum(gf..) (;) et(d) a(gxeg)lat(ffg) e(eh)os(hhivH//E'f) in(gxfhFE'fwgFE) fa(de!fvED'e)me.(e[ll:1]d..)
+(::) <i>Ps.</i> Ex(d)sul(f)tá(h)te(h) ju(h)sti(h) in(i) Dó(i)mi(h)no,(h.) *(:) re(f)ctos(h) de(h)cet(h) col(i)lau(g)dá(h)ti(f)o.(f.) (::)
+
+
+Gló(d)ri(f)a(h) Pa(h)tri,(h) et(h) Fí(h)li(h)o,(h.) (,) et(h) Spi(h)rí(h)tu(h)i(i) San(i)cto.(h.) *(:) Sic(f)ut(h) e(h)rat(h) in(h) prin(h)cí(h)pi(h)o,(h.) (,) et(h) nunc,(h) et(i) sem(i)per,(h.) (:) et(f) in(h) saé(h)cu(h)la(h) sae(h)cu(h)ló(i)rum.(g) A(h)men.(f.) (::)
+
+Co(d)gi(f)ta(hh)ti(h)ó(hi)nes(h) Cor(hihhg)dis(ef) e(high)jus(gf..) (;) in(d)
+ge(e)ne(f)ra(f)ti(f)ó(f!gwh)ne(hh) (,) et(h) ge(hf)ne(h)ra(hji)ti(h_g)ó(hji)nem
+:(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (:) ut(f) é(fe)ru(eh)at(h) a(h) mor(hji)te(i_[oh:h]h) (,)
+á(hhh)ni(e)mas(g) e(gi/jij)ó(hi_[oh:h]H'_[oh:h]GF'g)rum(gf..) (;) et(d) a(gxeg)lat(ffg)
+e(eh)os(hhivH//E'f) in(gxfhFE'fwgFE) fa(de!fvED'e)me.(e[ll:1]d..) (::)
+}
+
+\end{document}
