@@ -1,0 +1,53 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.25in, paperheight=4.5in, paperwidth=6in]{geometry}
+%\documentclass[aspectratio=169]{beamer}
+
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage[autocompile]{gregoriotex}
+
+\graphicspath{.}
+
+\title{Compline}
+\author{}
+\date{}
+
+\setlength\parindent{0pt}
+
+% Changes the size of the first letter of a score
+% \grechangestyle{initial}{\fontsize{30}{30}\selectfont}
+\grechangestyle{initial}{\usefont{U}{yinit}{m}{n}\fontsize{5}{5}\selectfont}
+
+\begin{document}
+
+\noindent
+\obeylines
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+% \greannotation{IN. V}
+
+\begin{center}
+{\Huge The Immaculate Conception of the Blessed Virgin Mary}
+\end{center}
+\textline[t]{\textbf{Communion}}{Mode VIII}{PS 86: 3; Lk 1: 49}
+\gabcsnippet{
+(c4) GLo(gg)ri(gh)ó(hvGF//g.h!iwjg)sa(g.) *(,) di(g!jj)cta(j) sunt(kij) de(h) te,(hvGF') Ma(h)rí(hjI'G)a :(g.) (:) qui(g)a(hih) fe(g)cit(e) ti(ffg)bi(gvFED.) () () ma(f/gh/jg)gna(g.) (,) qui(f) pot(ghg/h!jjh)ens(hig) est.(g.) (::)
+
+qui(g)a(h) fe(j)cit(j) mi(j)hi(j) ma(j)gna,(j) qui(k) po(k)tens(j) est,(j.) (:) et(j) san(j)ctum(j) no(i)men(j) ei(h)us,(g.) (::)
+
+Glo(gg)ri(gh)ó(hvGF//g.h!iwjg)sa(g.) *(,) di(g!jj)cta(j) sunt(kij) de(h) te,(hvGF') Ma(h)rí(hjI'G)a :(g.) (:) qui(g)a(hih) fe(g)cit(e) ti(ffg)bi(gvFED.) () () ma(f/gh/jg)gna(g.) (,) qui(f) pot(ghg/h!jjh)ens(hig) est.(g.) (::)
+
+}
+
+\end{document}
