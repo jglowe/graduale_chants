@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.25in, paperheight=4.5in, paperwidth=6in]{geometry}
+%\documentclass[aspectratio=169]{beamer}
+
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage[autocompile]{gregoriotex}
+
+\graphicspath{.}
+
+\title{Compline}
+\author{}
+\date{}
+
+\setlength\parindent{0pt}
+
+% Changes the size of the first letter of a score
+% \grechangestyle{initial}{\fontsize{30}{30}\selectfont}
+\grechangestyle{initial}{\usefont{U}{yinit}{m}{n}\fontsize{5}{5}\selectfont}
+
+\begin{document}
+
+\noindent
+\obeylines
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+% \greannotation{IN. V}
+
+\begin{center}
+{\Huge Saints Peter and Paul, Apostles}
+{\Huge At Mass During the Day}
+\end{center}
+\textline[t]{\textbf{Communion}}{Mode VI}{Mt 16: 18; Ps. 79: 2.}
+\gabcsnippet{
+
+(c4) TU(f) es(df) Pe(fgff)trus,(cdc.) *(;) et(d) su(ffg)per(f) hanc(f) pe(f_[oh:h]g_[oh:h]f_[oh:h])tram(f.) (;) ae(f)di(fg'h)fi(h_g)cá(g)bo(fgFD.1) (,) Ec(d)clé(ffg)si(f)am(fg/hg/h_g) me(fg!hvGF'g)am.(gf..) (::)
+
+Qui(fg) pa(gf)scis(gh) Is(h)ra(g)el,(ixi) in(h)tén(g)de,(f.) (:) qui(h) de(h)dú(hj)cis(g) vel(f)ut(g) o(fd)vem(f) Io(g)seph.(f.) (::)
+
+Tu(f) es(df) Pe(fgff)trus,(cdc.) (;) et(d) su(ffg)per(f) hanc(f) pe(f_[oh:h]g_[oh:h]f_[oh:h])tram(f.) (;) ae(f)di(fg'h)fi(h_g)cá(g)bo(fgFD.1) (,) Ec(d)clé(ffg)si(f)am(fg/hg/h_g) me(fg!hvGF'g)am.(gf..) (::)
+}
+
+\end{document}
