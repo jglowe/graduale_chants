@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.25in, paperheight=4.5in, paperwidth=6in]{geometry}
+%\documentclass[aspectratio=169]{beamer}
+
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage[autocompile]{gregoriotex}
+
+\graphicspath{.}
+
+\title{Compline}
+\author{}
+\date{}
+
+\setlength\parindent{0pt}
+
+% Changes the size of the first letter of a score
+% \grechangestyle{initial}{\fontsize{30}{30}\selectfont}
+\grechangestyle{initial}{\usefont{U}{yinit}{m}{n}\fontsize{5}{5}\selectfont}
+
+\begin{document}
+
+\noindent
+\obeylines
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+% \greannotation{IN. V}
+
+\begin{center}
+{\Huge Mass for the Dead}
+{\Large Outside Easter Time}
+\end{center}
+\textline[t]{\textbf{Introit}}{Mode VI}{4 Esd 2: 34. 35; Ps 64: 2.}
+\gabcsnippet{
+
+
+(c4)
+RE(ffg)qui(f)em(f) *() ae(fg'h)tér(hggfg)nam(gf..) (;) do(fg'h)na(hg) e(h)is(ixhjHG'hw!ivHG') Dó(f)mi(fg!hvGF'g)ne :(gf..) (:) et(hg~) lux(hvGF') per(h)pé(gh)tu(gf)a(f.) (;) lú(hg)ce(h)at(ixhjHG'hw!ivHG) e(fg!hvGF'g)is.(gf..) (::)
+
+<i>Ps.</i> Te(fg) de(gf)cet(gh) hy(h)mnus(h) De(ixi)us(h) in(h) Si(g)on,(f.) (;) et(h) ti(hj)bi(g'_) red(f)dé(f)tur(f) vo(f)tum(g) in(fd) Je(f)rú(g)sa(f)lem:(f.) (::)
+
+Re(ffg)qui(f)em(f) ae(fg'h)tér(hggfg)nam(gf..) (;) do(fg'h)na(hg) e(h)is(ixhjHG'hw!ivHG') Dó(f)mi(fg!hvGF'g)ne :(gf..) (:) et(hg~) lux(hvGF') per(h)pé(gh)tu(gf)a(f.) (;) lú(hg)ce(h)at(ixhjHG'hw!ivHG) e(fg!hvGF'g)is.(gf..) (::)
+
+}
+
+\end{document}
