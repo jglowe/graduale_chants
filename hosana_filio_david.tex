@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.25in, paperheight=3in, paperwidth=6in]{geometry}
+%\documentclass[aspectratio=169]{beamer}
+
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage[autocompile]{gregoriotex}
+
+\graphicspath{.}
+
+\title{Compline}
+\author{}
+\date{}
+
+\setlength\parindent{0pt}
+
+% Changes the size of the first letter of a score
+% \grechangestyle{initial}{\fontsize{30}{30}\selectfont}
+\grechangestyle{initial}{\usefont{U}{yinit}{m}{n}\fontsize{5}{5}\selectfont}
+
+\begin{document}
+
+\noindent
+\obeylines
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+\makeatletter
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{V}}
+\DeclareRobustCommand{\response}{\vers@resp{0pt}{R}}
+
+\newcommand{\vers@resp@sym}{\raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}}
+
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{\hidewidth\kern#1\vers@resp@sym\hidewidth\cr#2\cr}}%
+}
+\makeatother
+
+% \greannotation{IN. V}
+
+\begin{center}
+{\Huge Palm Sunday}
+{\Large Commoration fo the Lord's Enterence into Jerusalem}
+{\footnotesize Mode VII}
+\end{center}
+\textbf{Opening Antiphon}
+\gabcsnippet{
+(c3) HO(e)san(ei~)na(i.) *() fí(i')li(h)o(g') Da(h)vid :(iji.) (;) be(g)ne(h)dí(iji)ctus(hih.) (,) qui(h) ve(fe)nit(e[ll:1]d) in(fh~) nó(h_f)mi(g)ne(fg) Dó(e)mi(e)ni.(e.) (:) Rex(h) Is(hhh)ra(fh!ivHG'h)ël :(hg..) (;) Ho(e)sán(ei~)na(ijHF') in(g) ex(fg~)cél(e.)sis.(e.) (::)
+}
+
+\end{document}
