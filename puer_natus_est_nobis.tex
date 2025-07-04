@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.25in, paperheight=7in, paperwidth=6in]{geometry}
+%\documentclass[aspectratio=169]{beamer}
+
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage[autocompile]{gregoriotex}
+
+\graphicspath{.}
+
+\title{Compline}
+\author{}
+\date{}
+
+\setlength\parindent{0pt}
+
+% Changes the size of the first letter of a score
+% \grechangestyle{initial}{\fontsize{30}{30}\selectfont}
+\grechangestyle{initial}{\usefont{U}{yinit}{m}{n}\fontsize{5}{5}\selectfont}
+
+\begin{document}
+
+\noindent
+\obeylines
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+\makeatletter
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{V}}
+\DeclareRobustCommand{\response}{\vers@resp{0pt}{R}}
+
+\newcommand{\vers@resp@sym}{\raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}}
+
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{\hidewidth\kern#1\vers@resp@sym\hidewidth\cr#2\cr}}%
+}
+\makeatother
+
+% \greannotation{IN. V}
+
+\begin{center}
+{\Huge Christmas}
+{\Large At Mass During the Day}
+{\footnotesize Mode VII}
+\end{center}
+\textbf{Introit} \hfill Is 9: 6 \versicle.\;Ps 97
+\gabcsnippet{
+(c3) PU(ei)er(i.) *() na(iji)tus(h) est(hhh) no(ih/ji)bis,(i.) (;) et(ei~) fí(iji)li(hg)us(f) da(hhi)tus(h) est(h) no(hihh)bis :(efe.) (:) cu(e)jus(f) im(h)pé(gi!jk)ri(ih)um(h.) (,) su(h)per(h) hú(ih/ji)me(h_g)rum(hhh) e(h_f//hghvG~F~)jus :(gf..) (:) et(hg) vo(h)cá(hji)bi(h)tur(hhh) no(h)men(hhh) e(highvG~F~)jus,(gf..) (;) ma(hj)gni(i) con(eh~)sí(h)li(hhh_f)i(f) An(fhf___!gwh)ge(efe___)lus.(e.) (::) 
+
+<i>Ps.</i> Can(ehg)tá(hi)te(i) Dó(i)mi(i)no(i) cán(ik)ti(j)cum(j) no(ji)vum :(ij..) *(:) qui(ig)a(hi) mi(i)ra(i)bí(i!jwk)li(i')a(h) fe(hhh)cit.(fe..) (::) 
+
+Gló(ehg)ri(hi)a(i) Pa(i)tri,(i) et(i) Fí(i)li(i)o,(i.) (,) et(i) Spi(i)rí(ik)tu(j)i(j) San(ji~)cto.(ij..) *(:) Sic(ig)ut(hi) e(i)rat(i) in(i) prin(i)cí(i)pi(i)o,(i.) (,) et(i) nunc,(ik) et(j) sem(ji~)per,(ij..) (:) et(ig) in(hi) saé(i)cu(i)la(i) sae(i)cu(i!jwk)ló(i')rum.(h) A(hhh)men.(fe..) (::)
+
+Pu(ei)er(i.) *() na(iji)tus(h) est(hhh) no(ih/ji)bis,(i.) (;) et(ei~) fí(iji)li(hg)us(f) da(hhi)tus(h) est(h) no(hihh)bis :(efe.) (:) cu(e)jus(f) im(h)pé(gi!jk)ri(ih)um(h.) (,) su(h)per(h) hú(ih/ji)me(h_g)rum(hhh) e(h_f//hghvG~F~)jus :(gf..) (:) et(hg) vo(h)cá(hji)bi(h)tur(hhh) no(h)men(hhh) e(highvG~F~)jus,(gf..) (;) ma(hj)gni(i) con(eh~)sí(h)li(hhh_f)i(f) An(fhf___!gwh)ge(efe___)lus.(e.) (::) 
+}
+
+\end{document}
+
+
+
