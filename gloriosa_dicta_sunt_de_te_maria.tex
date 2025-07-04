@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[margin=.25in, paperheight=4.5in, paperwidth=6in]{geometry}
+\usepackage[margin=.25in, paperheight=5in, paperwidth=6in]{geometry}
 %\documentclass[aspectratio=169]{beamer}
 
 \usepackage{import}
@@ -29,6 +29,17 @@
 \noindent
 \obeylines
 
+\makeatletter
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{V}}
+\DeclareRobustCommand{\response}{\vers@resp{0pt}{R}}
+
+\newcommand{\vers@resp@sym}{\raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}}
+
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{\hidewidth\kern#1\vers@resp@sym\hidewidth\cr#2\cr}}%
+}
+\makeatother
+
 \newcommand\textline[4][t]{%
   \par\smallskip\noindent\parbox[#1]{.333\textwidth}{#2}%
   \parbox[#1]{.333\textwidth}{\centering#3}%
@@ -39,12 +50,14 @@
 
 \begin{center}
 {\Huge The Immaculate Conception of the Blessed Virgin Mary}
+{\footnotesize Mode VIII}
 \end{center}
-\textline[t]{\textbf{Communion}}{Mode VIII}{PS 86: 3; Lk 1: 49}
+\textbf{Communion} \hfill PS 86: 3; Lk 1: 49 \versicle\;Lk 1: 46-47
 \gabcsnippet{
 (c4) GLo(gg)ri(gh)ó(hvGF//g.h!iwjg)sa(g.) *(,) di(g!jj)cta(j) sunt(kij) de(h) te,(hvGF') Ma(h)rí(hjI'G)a :(g.) (:) qui(g)a(hih) fe(g)cit(e) ti(ffg)bi(gvFED.) () () ma(f/gh/jg)gna(g.) (,) qui(f) pot(ghg/h!jjh)ens(hig) est.(g.) (::)
 
-qui(g)a(h) fe(j)cit(j) mi(j)hi(j) ma(j)gna,(j) qui(k) po(k)tens(j) est,(j.) (:) et(j) san(j)ctum(j) no(i)men(j) ei(h)us,(g.) (::)
+Ma(g)gní(hg)fi(gj)cat(j) á(j)ni(j)ma(ji) me(jk)a(k) Dó(jk)mi(j)num.(j.) (::)
+Et(jh) ex(hj)sul(j)tá(j)vit(j) spí(j)ri(j)tus(j) me(j)us(j) in(j) De(j)o(j) sal(j)va(jji)tó(gh)ri(ji) me(h)o.(g.) (::)
 
 Glo(gg)ri(gh)ó(hvGF//g.h!iwjg)sa(g.) *(,) di(g!jj)cta(j) sunt(kij) de(h) te,(hvGF') Ma(h)rí(hjI'G)a :(g.) (:) qui(g)a(hih) fe(g)cit(e) ti(ffg)bi(gvFED.) () () ma(f/gh/jg)gna(g.) (,) qui(f) pot(ghg/h!jjh)ens(hig) est.(g.) (::)
 

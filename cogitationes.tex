@@ -36,16 +36,27 @@
 }
 
 % \greannotation{IN. V}
+\makeatletter
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{V}}
+\DeclareRobustCommand{\response}{\vers@resp{0pt}{R}}
+
+\newcommand{\vers@resp@sym}{\raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}}
+
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{\hidewidth\kern#1\vers@resp@sym\hidewidth\cr#2\cr}}%
+}
+\makeatother
 
 \begin{center}
 {\Huge The Most Sacred Heart of Jesus}
+{\footnotesize Mode V}
 \end{center}
-\textline[t]{\textbf{Introit}}{Mode V}{Ps 32: 11.19.}
+\textbf{Introit} \hfill Ps 32: 11. 19. \versicle\;Ps 32: 1
 \gabcsnippet{
 
 (c3) CO(d)gi(f)ta(hh)ti(h)ó(hi)nes(h) *() Cor(hihhg)dis(ef) e(high)jus(gf..) (;) in(d) ge(e)ne(f)ra(f)ti(f)ó(f!gwh)ne(hh) (,) et(h) ge(hf)ne(h)ra(hji)ti(h_g)ó(hji)nem :(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (:) ut(f) é(fe)ru(eh)at(h) a(h) mor(hji)te(i_[oh:h]h) (,) á(hhh)ni(e)mas(g) e(gi/jij)ó(hi_[oh:h]H'_[oh:h]GF'g)rum(gf..) (;) et(d) a(gxeg)lat(ffg) e(eh)os(hhivH//E'f) in(gxfhFE'fwgFE) fa(de!fvED'e)me.(e[ll:1]d..)
-(::) <i>Ps.</i> Ex(d)sul(f)tá(h)te(h) ju(h)sti(h) in(i) Dó(i)mi(h)no,(h.) *(:) re(f)ctos(h) de(h)cet(h) col(i)lau(g)dá(h)ti(f)o.(f.) (::)
 
+(::) <i>Ps.</i> Ex(d)sul(f)tá(h)te(h) ju(h)sti(h) in(i) Dó(i)mi(h)no,(h.) *(:) re(f)ctos(h) de(h)cet(h) col(i)lau(g)dá(h)ti(f)o.(f.) (::)
 
 Gló(d)ri(f)a(h) Pa(h)tri,(h) et(h) Fí(h)li(h)o,(h.) (,) et(h) Spi(h)rí(h)tu(h)i(i) San(i)cto.(h.) *(:) Sic(f)ut(h) e(h)rat(h) in(h) prin(h)cí(h)pi(h)o,(h.) (,) et(h) nunc,(h) et(i) sem(i)per,(h.) (:) et(f) in(h) saé(h)cu(h)la(h) sae(h)cu(h)ló(i)rum.(g) A(h)men.(f.) (::)
 
